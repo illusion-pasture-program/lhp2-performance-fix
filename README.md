@@ -62,6 +62,7 @@ powershell -ExecutionPolicy Bypass -File ".\uninstall.ps1"
 ```
 
 Steam's **Verify integrity of game files** also restores the original game files.
+It may not remove extra local wrapper DLLs, so use `uninstall.ps1` when removing this fix.
 
 ## Config
 

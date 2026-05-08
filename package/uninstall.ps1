@@ -42,4 +42,4 @@ if ((Test-Path -LiteralPath $DxvkConfMarker) -and (Test-Path -LiteralPath $GameD
 }
 
 Write-Host ""
-Write-Host "Uninstalled. Steam's Verify Integrity can also restore original files."
+Write-Host "Uninstalled. Steam Verify may not remove extra local DLLs, so this script is the preferred removal path."
