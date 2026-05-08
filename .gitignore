@@ -1,0 +1,6 @@
+src/*.dll
+src/*.exp
+src/*.lib
+src/*.obj
+dist/*.zip
+package/bin/*.dll
