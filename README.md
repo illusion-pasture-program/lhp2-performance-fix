@@ -35,7 +35,11 @@ The proxy is intentionally tiny:
 
 ## Install
 
-Download the release zip and extract it anywhere.
+Download the release zip from:
+
+https://github.com/illusion-pasture-program/lhp2-performance-fix/releases/
+
+Extract it anywhere.
 
 Run:
 
