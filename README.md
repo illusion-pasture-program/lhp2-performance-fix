@@ -78,7 +78,28 @@ frame_limiter_sleep_cap_ms = 2
 debug_log = 0
 ```
 
-The tested best value is `2`. If you want to experiment, try `3` or `5`.
+The tested best value is `2`. Fully quit and relaunch the game after changing this file.
+
+### Sleep Cap Tuning
+
+`frame_limiter_sleep_cap_ms` controls how much the game's broken frame limiter is allowed to sleep at the problem callsite.
+
+Useful values:
+
+```ini
+frame_limiter_sleep_cap_ms = 2   ; best tested, most aggressive smoothing
+frame_limiter_sleep_cap_ms = 3   ; slightly gentler
+frame_limiter_sleep_cap_ms = 5   ; still helps a lot, but may allow small dips
+frame_limiter_sleep_cap_ms = 0   ; effectively disables sleep at that callsite
+```
+
+Lower values reduce the chance of complex areas turning into big FPS drops. Higher values are more conservative and closer to the original behavior. If `2` ever feels unusual on your system, try `3` or `5`.
+
+To disable only the Sleep cap while still using DXVK:
+
+```ini
+enabled = 0
+```
 
 ## Tested Setup
 
